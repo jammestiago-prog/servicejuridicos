@@ -1,0 +1,89 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Luxury)",
+  "colors": {
+    "background": "#0A0A0A",
+    "surface": "#141414",
+    "surface_hover": "#1A1A1A",
+    "primary_gold": "#D4AF37",
+    "primary_gold_hover": "#B8860B",
+    "gold_gradient": "bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#B8860B]",
+    "text_primary": "#F5F5F5",
+    "text_secondary": "#A3A3A3",
+    "border_default": "#262626",
+    "border_gold": "rgba(212, 175, 55, 0.3)",
+    "whatsapp_green": "#25D366"
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond",
+    "body_font": "Inter",
+    "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#F5F5F5]",
+    "h2": "text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#F5F5F5]",
+    "h3": "text-xl sm:text-2xl font-semibold text-[#D4AF37]",
+    "body": "text-base text-[#A3A3A3] leading-relaxed",
+    "label": "text-sm font-medium text-[#F5F5F5] uppercase tracking-wider"
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-6 lg:px-8",
+    "section_padding": "py-20 lg:py-32",
+    "grid_services": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8",
+    "grid_testimonials": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+  },
+  "components": {
+    "navbar": "Glassmorphism header, sticky top-0, z-50, bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-[#262626]. Must include logo, nav links, and a gold outline CTA.",
+    "hero": "Split layout or dark overlay. Left: oversized Cormorant Garamond heading (gold accents), value proposition, primary gold solid CTA and secondary outline CTA. Right: Image of justice scales or dark office.",
+    "service_card": "Dark surface #141414, 1px border #262626. On hover: border turns to #D4AF37, slight -translate-y-1 lift. Includes a lucide-react icon (gold), title, and brief description.",
+    "about_us": "Two-column layout. Left: high-quality image of dark office or scales. Right: Heading, text, and 3 stat counters (e.g., '10+ Anos', '500+ Casos Vencidos', 'R$50M+ Economizados').",
+    "faq_accordion": "Shadcn Accordion. Dark mode styled: bg-[#141414], white text, gold icon on expand.",
+    "contact_form": "Shadcn Form inside a card. Inputs: bg-[#0A0A0A], border-[#262626], focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37]. Includes Nome, Telefone, Email, Serviço de Interesse (Select), Mensagem. Submit button: solid Gold.",
+    "whatsapp_fab": "Fixed bottom-right corner, z-50. WhatsApp green bg, white icon, drop-shadow-lg, hover:scale-110 transition-transform.",
+    "footer": "Dark bg #0A0A0A, border-t border-[#262626]. Columns for Logo/About, Quick Links, Contact Info, and Legal Disclaimer (OAB). Small text."
+  },
+  "media": {
+    "icons_library": "lucide-react",
+    "images": {
+      "hero_bg": {
+        "url": "https://images.pexels.com/photos/6077665/pexels-photo-6077665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Elegant balance of technology and justice scales on an office desk, symbolizing law and balance."
+      },
+      "about_us": {
+        "url": "https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxsYXd5ZXIlMjBvZmZpY2UlMjBkYXJrfGVufDB8fHx8MTc4MzAxOTc3N3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Dark and moody law office, books in glass bookcase, signaling deep expertise."
+      },
+      "agro_debt_context": {
+        "url": "https://images.unsplash.com/photo-1570844052008-bee926b7bc07?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxicmF6aWwlMjBhZ3JpY3VsdHVyZSUyMHN1bnNldHxlbnwwfHx8fDE3ODMwMTk3N3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Silhouette of a tree during golden hour in Brazil, used for the Agribusiness debt section or as an atmospheric background."
+      }
+    }
+  },
+  "services_list": [
+    { "title": "Cancelamento de Busca e Apreensão de Veículos", "icon": "Car" },
+    { "title": "Restituição de Taxas e Tarifas Ilegais", "icon": "Receipt" },
+    { "title": "Revisional de Contrato", "icon": "FileSearch" },
+    { "title": "Ação para Remover Vencido do Bacen", "icon": "Landmark" },
+    { "title": "Limpa Nome", "icon": "ShieldCheck" },
+    { "title": "Rating PF e PJ", "icon": "TrendingUp" },
+    { "title": "Retiramos Nome do Jusbrasil e Escavador", "icon": "UserMinus" },
+    { "title": "Desbloqueio de Conta e Quitação com Desconto", "icon": "Unlock" },
+    { "title": "Recurso para Multas na CNH", "icon": "FileWarning" },
+    { "title": "Redução de Dívidas de até 95%", "icon": "Percent" },
+    { "title": "Prolongamento de Dívidas do Agro", "icon": "Tractor" },
+    { "title": "Redução de Impostos de Empresas até 40%", "icon": "Calculator" }
+  ],
+  "accessibility_and_interactions": {
+    "hover_states": "All buttons and links must have explicit hover states (e.g., text color change, background lightness change).",
+    "focus_states": "Form inputs must use gold ring on focus. No default blue outlines.",
+    "animations": "Subtle fade-in-up for sections on scroll using framer-motion. Staggered fade-in for service cards.",
+    "testing": "All interactive elements (buttons, inputs, accordion triggers) MUST include a 'data-testid' attribute in kebab-case."
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react' for icons if not present.",
+    "Ensure the exact 12 services provided in 'services_list' are rendered in the Services section grid.",
+    "The primary WhatsApp number is '+55 21 96923-5528'. Use this in the Contact section and the Floating Action Button.",
+    "The Contact form must collect: Nome, Telefone, Email, Serviço de Interesse (using a Select dropdown populated with the 12 services), and Mensagem.",
+    "Do NOT use pure black (#000000) for the background; stick to the specified #0A0A0A.",
+    "Typography: Import 'Cormorant Garamond' from Google Fonts and use it exclusively for h1, h2, and large display text. Use 'Inter' for body.",
+    "Make sure the hero heading includes gold text accents (e.g., specific words highlighted in the gold gradient).",
+    "Implement Shadcn UI for the Form, Select, Accordion, and potentially Cards, but override styles to match the dark/luxury theme."
+  ]
+}
